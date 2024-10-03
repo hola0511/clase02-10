@@ -11,5 +11,5 @@ templates = Jinja2Templates(directory=".")
 async def read_root(request: Request):
     mensaje = "ARRIBA"
     lista =  [1, 2, 3, 4, 5, 6, 7, 8]
-    ci = "ESPAÑA"
-    return templates.TemplateResponse("index.html", {"request": request, "message":mensaje, "X":lista}, "ci":ci)
+    hola = "ESPAÑA"
+    return templates.TemplateResponse("index.html", {"request": request, "message":mensaje, "X":lista, "ci":hola})
